@@ -53,7 +53,7 @@ class Word2VecTest(tf.test.TestCase):
   def testWord2Vec(self):
     FLAGS.batch_size = 5
     FLAGS.num_neg_samples = 10
-    FLAGS.epochs_to_train = 1
+    FLAGS.epochs_to_train = 5
     FLAGS.min_count = 0
     word2vec.main([])
 
